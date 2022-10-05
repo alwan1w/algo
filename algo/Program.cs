@@ -74,17 +74,17 @@ namespace algo
         }
         static void Main(string[] args)
         {
-                //creating the object of the bubblesort class
-                Program myList = new Program();
-                // pemanggilan fungsi untuk menerima elemen array
-                myList.read();
-                // pemanggilan fungsi untuk mengurutkan array
-                myList.BubbleSortArray();
-                // pemanggilan fungsi untuk menampilkan array yang sudah tersusun
-                myList.display();
-                //exit
-                Console.WriteLine("\n\nTekan Tombol Apa saja Untuk Keluar.");
-                Console.Read();
+            //creating the object of the bubblesort class
+            Program myList = new Program();
+            // pemanggilan fungsi untuk menerima elemen array
+            myList.read();
+            // pemanggilan fungsi untuk mengurutkan array
+            myList.BubbleSortArray();
+            // pemanggilan fungsi untuk menampilkan array yang sudah tersusun
+            myList.display();
+            //exit
+            Console.WriteLine("\n\nTekan Tombol Apa saja Untuk Keluar.");
+            Console.Read();
 
         }
     }
