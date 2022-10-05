@@ -40,39 +40,40 @@ namespace algo
                 string s1 = Console.ReadLine();
                 a[i] = Int32.Parse(s1);
             }
-            public void display()
+        }
+        public void display()
+        {
+            // Menampilkan array yang tersusun
+             Console.WriteLine("");
+             Console.WriteLine("-----------------------------------");
+             Console.WriteLine(" Element array yang telah tersusun ");
+             Console.WriteLine("-----------------------------------");
+             for (int j = 0; j < n; j++)
+             {
+                 Console.WriteLine(a[j]);
+             }
+             Console.WriteLine("");
+        }
+        public void BubbleSortArray()
+        {
+            for (int i = 0; i < n; i++) // For n - 1 passes
             {
-                //Menampilkan array yang tersusun
-                Console.WriteLine("");
-                Console.WriteLine("-----------------------------------");
-                Console.WriteLine(" Element array yang telah tersusun ");
-                Console.WriteLine("-----------------------------------");
-                for (int j = 0; j < n; j++)
+                //pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
+                for (int j = 0; j < n - i; j++)
                 {
-                    Console.WriteLine(a[j]);
-                }
-                Console.WriteLine("");
-            }
-            public void BubbleSortArray()
-            {
-                for (int i = 0; i < n; i++) // For n - 1 passes
-                {
-                    //pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
-                    for (int j = 0; j < n - i; j++)
-                    {
-                        if (a[j] > a[j + 1])// jika elemen tidak dalam urutan yang benar
-                        {
-                            // tukar elemen
-                            int temp;
-                            temp = a[j];
-                            a[j] = a[j + 1];
-                            a[j + 1] = temp;
-                        }
-                    }
+                     if (a[j] > a[j + 1])// jika elemen tidak dalam urutan yang benar
+                     {
+                         // tukar elemen
+                         int temp;
+                         temp = a[j];
+                         a[j] = a[j + 1];
+                         a[j + 1] = temp;
+                     }
                 }
             }
-            static void Main(string[] args)
-            {
+        }
+        static void Main(string[] args)
+        {
                 //creating the object of the bubblesort class
                 Program myList = new Program();
                 // pemanggilan fungsi untuk menerima elemen array
@@ -85,7 +86,6 @@ namespace algo
                 Console.WriteLine("\n\nTekan Tombol Apa saja Untuk Keluar.");
                 Console.Read();
 
-            }
         }
     }
 }
