@@ -40,6 +40,19 @@ namespace algo
                 string s1 = Console.ReadLine();
                 a[i] = Int32.Parse(s1);
             }
+            public void display()
+            {
+                //Menampilkan array yang tersusun
+                Console.WriteLine("");
+                Console.WriteLine("-----------------------------------");
+                Console.WriteLine(" Element array yang telah tersusun ");
+                Console.WriteLine("-----------------------------------");
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine(a[j]);
+                }
+                Console.WriteLine("");
+            }
         }
     }
 }
