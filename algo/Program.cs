@@ -71,6 +71,11 @@ namespace algo
                     }
                 }
             }
+            static void Main(string[] args)
+            {
+                //creating the object of the bubblesort class
+                Program myList = new Program();
+            }
         }
     }
 }
